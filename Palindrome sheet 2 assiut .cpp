@@ -29,3 +29,28 @@ int main()
     	cout << "NO" << endl;    
     return 0;
 }
+// another solution
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    int n , temp , rev=0;
+    cin>> n;
+    temp = n;
+    while (n)
+    {
+    	rev = (rev*10)+ (n%10);
+        n/=10; 
+    }
+    cout << rev;
+    if (rev == temp )
+    {
+    	cout << "YES" <<endl;
+    }
+    else 
+    {
+    	cout << "NO" << endl;
+    }
+    return 0;
+}
+
